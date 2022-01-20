@@ -1,0 +1,40 @@
+# Project exclude paths
+/mall-common/target/
+/mall-middleware/mall-db/target/
+/mall-middleware/mall-flow/target/
+/mall-middleware/mall-nacos/target/
+/mall-middleware/mall-redis/target/
+/mall-middleware/mall-threadpool/target/
+/mall-utils/target/
+
+
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+*.class
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+rebel.xml
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+data/
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+.DS_Store

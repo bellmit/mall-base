@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>mall-base</artifactId>
+        <groupId>com.yan.mall</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>mall-middleware</artifactId>
+    <packaging>pom</packaging>
+
+    <name>mall-middleware</name>
+
+    <modules>
+        <module>mall-redis</module>
+        <module>mall-db</module>
+        <module>mall-threadpool</module>
+        <module>mall-nacos</module>
+        <module>mall-flow</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.yan.mall</groupId>
+            <artifactId>mall-utils</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.yan.mall</groupId>
+            <artifactId>mall-common</artifactId>
+        </dependency>
+    </dependencies>
+</project>

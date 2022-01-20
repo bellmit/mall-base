@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848  #nacos服务注册地址
+        group: yan-dev  #服务注册分组
+        #service: mall-coupon #注册在nacos-server中的名字，等同于 spring.application.name
+        namespace: dev
+    #application:
+    #name: mall-coupon #服务名称，在nacos中会展示出来
+    alicloud:
+      access-key: LTAI5t692XHSgFnPYXto1ocn
+      secret-key: HcqS9YzdZ6GFWMSq4KMbAuFwDMgEPz
+      oss:
+        endpoint: oss-cn-beijing.aliyuncs.com
+        #bucket: yan-mall-image
+logging:
+  level:
+    com.yan.mall: debug
